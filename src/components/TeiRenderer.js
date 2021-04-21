@@ -4,6 +4,7 @@ import TextField from '@material-ui/core/TextField';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
+import Button from '@material-ui/core/Button';
 import { v4 } from 'uuid';
 
 class TeiRenderer extends React.Component {
@@ -13,6 +14,7 @@ class TeiRenderer extends React.Component {
       this.loadTEI = this.loadTEI.bind(this)
       this.editText = this.editText.bind(this)
       this.copy = this.copy.bind(this)
+      this.getSelection = this.getSelection.bind(this)
       this.state = {
         tei: null,
         title: null,
@@ -37,6 +39,11 @@ class TeiRenderer extends React.Component {
 
   copy(v) {
     navigator.clipboard.writeText(v)
+    this.setState({
+      texti: v
+    }, () => {
+      this.exeXPath()
+    })
   }
 
   getEverything(node,path) {
@@ -86,12 +93,9 @@ class TeiRenderer extends React.Component {
       })
   }
 
-  editText(e) {
-    this.setState({
-      texti: e.target.value
-    })
+  exeXPath() {
     try {
-      let o = this.state.tei.evaluate(e.target.value, this.state.tei, this.nsResolver, XPathResult.STRING_TYPE, null).stringValue
+      let o = this.state.tei.evaluate(this.state.texti, this.state.tei, this.nsResolver, XPathResult.STRING_TYPE, null).stringValue
       this.setState({
         texto: o
       })
@@ -102,19 +106,45 @@ class TeiRenderer extends React.Component {
     }
   }
 
+  editText(e) {
+    this.setState({
+      texti: e.target.value
+    }, () => {
+      this.exeXPath()
+    })
+  }
+
+  getSelection(e) {
+    let so = document.getSelection()
+    console.log(so)
+    if(so.anchorOffset===so.focusOffset) {
+      return
+    }
+    let start = (so.anchorOffset<so.focusOffset?so.anchorOffset:so.focusOffset)+1
+    let range = Math.abs(so.anchorOffset-so.focusOffset)
+    let xpath =
+      "substring("+
+        so.focusNode.parentElement.title+
+        ","+start+
+        ","+range+
+      ")"
+    console.log(xpath)
+    this.setState({
+      texti: xpath
+    }, () => {
+      this.exeXPath()
+    })
+  }
+
   render() {
 
     // {this.state.title}
 
     return (
       <div>
-        <Accordion>
-          <AccordionSummary id="panel1a-header">XPath</AccordionSummary>
-          <AccordionDetails>
-              <TextField fullWidth id="texti" label="Input XPath" value={this.state.texti} onChange={this.editText}/>
-              <TextField fullWidth id="texto" label="Output" value={this.state.texto} />
-          </AccordionDetails>
-        </Accordion>
+        <TextField fullWidth id="texti" label="Input XPath" value={this.state.texti} onChange={this.editText}/>
+        <TextField fullWidth id="texto" label="Output" value={this.state.texto} />
+        <Button onClick={this.getSelection}>Selection</Button>
         {this.state.everything}
       </div>
     )
