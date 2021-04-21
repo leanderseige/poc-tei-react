@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<TEI xml:id="file_someBib_obj-31579850_tei-msDesc" xml:lang="de" xsi:schemaLocation="http://www.tei-c.org/ns/1.0 http://diglib.hab.de/rules/schema/mss/current/cataloguing.xsd" xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:dcr="http://www.isocat.org/ns/dcr" xmlns:egXML="http://www.tei-c.org/ns/Examples" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Kontroverstheologische Schriften (Georgius Orter de Frickenhausen, Vincenzo Bandello)  (Leipzig, Universitätsbibliothek Leipzig, Ms 648)</title>
+            </titleStmt>
+            <editionStmt>
+                <edition>Elektronische Ausgabe nach TEI P5</edition>
+                <respStmt>
+                    <resp>Diese Datei wurde automatisch erzeugt, unter Verwendung der MXML-to-TEI-P5-Stylesheets, die an der Herzog August Bibliothek Wolfenbüttel im Rahmen des Projektes "Handschriftenportal" gepflegt werden.2021-04-16</resp>
+                    <name type="person"/>
+                    <name type="org"/>
+                </respStmt>
+            </editionStmt>
+            <publicationStmt>
+                <publisher>
+                  
+                    
+                    
+                    <name type="org"/>
+                  
+                    
+                    
+                    <ptr target="http://some.url"/>
+               </publisher>
+                <date when="2021-04-16" type="published">2021-04-16</date>
+                <date when="2014-01-22" type="issued">2014-01-22</date>
+                <availability status="restricted">
+                    <licence target="http://some.url">
+                     
+                        
+                        
+                        <p> (
+                            
+                            
+                            <ref target="http://some.url">copyright information</ref>)</p>
+                  </licence>
+                </availability>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Automatisch generierte Beschreibung aus einem  HiDA-4 Dokument.</p>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <msDesc xml:id="HSP-e456ef37-e483-3ad1-8cf1-6634eeae62bf" xml:lang="de" subtype="extern" type="hsp:description">
+                <msIdentifier>
+                    <settlement ref="4a887b8a-68ac-39b0-8d9d-027bddedb06b">Leipzig</settlement>
+                    <repository key="soz_30002560" ref="http://d-nb.info/gnd/30026-3 https://sigel.staatsbibliothek-berlin.de/suche/?isil=DE-15 016bc785-54a5-3c23-a276-7162a959306e">Universitätsbibliothek Leipzig</repository>
+                    <collection>Ms</collection>
+                    <collection type="baseShelfmarkGroup">Ms 601-700</collection>
+                    <idno>Ms 648</idno>
+                    <altIdentifier type="catalog">
+                        <idno>someBib_obj-31579850_tei-msDesc</idno>
+                    </altIdentifier>
+                    <altIdentifier type="catalog">
+                        <collection>Handschriftenportal Kulturobjektdokument-ID</collection>
+                        <idno>HSP-5781d706-bc09-38ba-bce6-015a842400e0</idno>
+                    </altIdentifier>
+                </msIdentifier>
+                <head>
+                  
+                    
+                    
+                    <title>Kontroverstheologische Schriften (Georgius Orter de Frickenhausen, Vincenzo Bandello) </title>
+                  
+                    
+                    
+                    <note type="caption">
+                     
+                        
+                        
+                        <material>Papier</material> · 
+                        
+                        
+                        <measure type="leavesCount">41</measure> (27+14) Bll. · 
+                        
+                        
+                        <measure type="pageDimensions">21 x 15,5</measure> · 
+                        
+                        
+                        <origPlace>Leipzig</origPlace> (Teile 5 und 6) und 
+                        
+                        
+                        <origPlace>Italien</origPlace> (?) (Teil 9) · 
+
+                        
+                        
+                        <origDate>um 1490</origDate> (Teile 5 und 6) und 
+                        
+                        
+                        <origDate>15. Jh. letztes Jahrzehnt</origDate> (Teil 9) </note>
+                  
+                    
+                    
+                    <index indexName="norm">
+                        <term type="title">Kontroverstheologische Schriften (Georgius Orter de Frickenhausen, Vincenzo Bandello)</term>
+                    </index>
+                  
+                    
+                    
+                    <index indexName="norm">
+                        <term type="status">vorhanden</term>
+                    </index>
+                  
+                    
+                    
+                    <index indexName="norm">
+                        <term type="form" n="codex">Codex</term>
+                    </index>
+                  
+                    
+                    
+                    <index indexName="norm">
+                        <term type="origDate_type">Datierung</term>
+                        <term type="origDate">um 1490</term>
+                        <term type="origDate_notBefore">1480</term>
+                        <term type="origDate_notAfter">1500</term>
+                    </index>
+                  
+                    
+                    
+                    <index indexName="norm">
+                        <term type="origDate_type">Datierung</term>
+                        <term type="origDate">15. Jh., 10. Jahrzehnt</term>
+                        <term type="origDate_notBefore">1491</term>
+                        <term type="origDate_notAfter">1500</term>
+                    </index>
+                  
+                    
+                    
+                    <index indexName="norm">
+                        <term type="origPlace">Leipzig</term>
+                        <term type="origPlace_GND-ID">4035206-7</term>
+                        <term type="origPlace_GeoNames-ID">6548737</term>
+                        <term type="origPlace_Getty-ID">7012329</term>
+                    </index>
+                  
+                    
+                    
+                    <index indexName="norm">
+                        <term type="origPlace">Italien</term>
+                        <term type="origPlace_GND-ID">4027833-5</term>
+                        <term type="origPlace_GeoNames-ID">3175395</term>
+                        <term type="origPlace_Getty-ID">1000080</term>
+                    </index>
+                  
+                    
+                    
+                    <index indexName="norm">
+                        <term type="material" n="chart">Papier</term>
+                    </index>
+                  
+                    
+                    
+                    <index indexName="norm">
+                        <term type="dimensions">21 × 15,5</term>
+                        <term type="height">21</term>
+                        <term type="width">15,5</term>
+                        <term type="format_typeOfInformation">real</term>
+                    </index>
+                  
+                    
+                    
+                    <index indexName="norm">
+                        <term type="measure_noOfLeaves" n="41">41 Bl.</term>
+                    </index>
+                  
+                    
+                    
+                    <index indexName="norm">
+                        <term type="textLang" n="la">lateinisch</term>
+                    </index>
+               </head>
+                <msContents>
+                    <textLang mainLang="la">lateinisch</textLang>
+                    <msItem xml:id="_31579852" n="Text">
+                        <locus>Ir</locus>
+                        <title>Inhaltsverzeichnis</title>
+                        <note type="fulltext">[fol. Ir]: 
+                            
+                            
+                            <title>Inhaltsverzeichnis</title>
+                     </note>
+                    </msItem>
+                    <msItem xml:id="_31579853" n="Text">
+                        <locus from="69r" to="83r">69r-83r</locus>
+                        <note type="fulltext">69r-83r (alt: 1r-15r) 
+                            
+                            
+                            <rs type="person" role="aut" key="z001_104068426">Georgius Orter de Frickenhausen</rs>, Responsio ad triplicationem doctoris Johannis de Breitenbach (ni fallor) (Nachtrag 16./17. Jh.): 
+                            
+                            
+                            <quote xml:lang="la">Dudum quidem venerunt scripta ad manus, qui ab amico</quote> (an dei uel hominis nescio) mordaciter contra veram et catholicam veritatem conflata sunt ... - … primo aspectu possunt reprobari pro nunc breuitatis gracia pertranseo. 83v-84v leer. (vgl. Leipzig, Universitätsbibliothek 
+                            
+                            
+                            <rs type="mss">Ms 647, 163r-180r</rs>) </note>
+                        <index>
+                            <term>
+                           
+                                
+                                
+                                <persName role="aut" key="z001_104068426">Georgius &lt;Orter de Frickenhausen&gt;</persName>
+                        </term>
+                        </index>
+                        <index indexName="initien">
+                            <term xml:lang="la">Dudum quidem venerunt scripta ad manus, qui ab amico 
+                                
+                                
+                                <locus>69r</locus>
+                        </term>
+                        </index>
+                    </msItem>
+                    <msItem xml:id="_31579854" n="Text">
+                        <locus from="85r" to="96v">85r-96v</locus>
+                        <note type="fulltext">85r-96v (alt: 17r-28v) Apologia adversus invectivam et incuriosam triplicationem nuper a quodam iurista […] (Name getilgt) studii Liptzensis super scriptis fratris 
+Georgii de Frickenhausen sacre theologie professoris editam incipit. (85v 
+leer, 86r) 
+                            
+                            
+                            <quote xml:lang="la">Sepe quidem veritatis pulsatus amore</quote> (diese 4 Wörter über einer Tilgung ergänzt) ut aduersus pretensa quedem scripta ... - ... pro modulo meo ignosce presumptionem. Vale. (Schreibervermerk mit getilgtem Namen) Per tibi obsequiosum fratrem Io[hannem] ... (?).(vgl. Leipzig, Universitätsbibliothek 
+                            
+                            
+                            <rs type="mss">Ms 647, 181r-218r</rs>)Laut Kaeppeli-Panella, Nr.1253, handelt es sich bei der Responsio ad triplicationem um die Schrift mit dem Incipit Sepe quidem veritatis. Die inhaltliche Zuweisung der frühneuzeitlichen Hand auf 69r wäre also falsch. </note>
+                        <index indexName="initien">
+                            <term xml:lang="la">Saepe quidem veritatis pulsatus amore 
+                                
+                                
+                                <locus>86r</locus>
+                        </term>
+                        </index>
+                    </msItem>
+                    <msItem xml:id="_31579855" n="Text">
+                        <locus from="231r" to="244v">231r-244v</locus>
+                        <note type="fulltext">231r-244v (alt: 30r-244v) 
+
+                            
+                            
+                            <rs type="person" role="aut" key="z001_104112069">Vincenzo Bandello</rs>, &gt;Apologia viridici libelli de veritate conceptionis virginis Marie, reverendissimi viri ac theologie profundissimi professoris, fratris Vincentii a Castro Novo contra invectivam tractatumque conceptionis fratris Ludovici de Turre Veronensis ordinis Minorum&lt;
+                            
+                            
+                            <quote xml:lang="la">[C]um eo tempore, quo plurimi studentium&#13;
+</quote> … - … uel eciam insipientes cum eo iudicabunt. Finis. </note>
+                        <index>
+                            <term>
+                           
+                                
+                                
+                                <persName role="aut" key="z001_104112069">Bandello, Vincenzo</persName>
+                        </term>
+                        </index>
+                        <index indexName="initien">
+                            <term xml:lang="la">Cum eo tempore, quo plurimi studentium 
+                                
+                                
+                                <locus>231r</locus>
+                        </term>
+                        </index>
+                    </msItem>
+                </msContents>
+                <physDesc>
+                    <p>a) Mehrteiligkeit:zusammengesetzt aus 9 Teilen Teil 1: fol.1-16 Orter, Georg: Repetitio disputationis de immaculata conceptione virginis Mariae. Leipzig: Moritz Brandis, nach dem 12. Dezember 1489;  Teil 2: fol. 17-30 Breitenbach, Johann von: Corroboratio determinationis de immaculata conceptione virginis Mariae factae. [Leipzig: Konrad Kachelofen für] J[ohann von] B[reitenbach, 1490];  Teil 3: fol. 31-60 Orter, Georg: Repetitio disputationis de immaculata conceptione virginis Mariae. Leipzig: [Moritz Brandis], 1490;  Teil 4: fol. 61-68 Breitenbach, Johann von: Triplicatio contra quandam Georgii de Frickenhausen. [Leipzig: Konrad Kachelofen, nicht vor 1490];  Teil 5: fol. 69-84 Hs.;  Teil 6: fol. 85-96 Hs.;  Teil 7: fol. 97-218 Ludovicus &lt;a Turri&gt;: De immaculata conceptione Mariae virginis. Brescia: Bonino Bonini, 19. August 1486; 
+Teil 8: fol. 219-227 Ubaldis, Baldus de: Tractatus de tabellionibus. [Rom: Stephan Plannck, um 1487/88], fol. 228 leer; Teil 9: fol. 229-230 leer, 
+fol. 231-244 Hs. b) Schriftart: Teil 5 und 6:gotische Kursive Teil 9: humanistische Kursive c) Buchschmuck: Teil 5 und 6: kein Buchschmuck Teil 9: 
+Überschrift und Paragrafenzeichen rubriziert </p>
+                    <p n="bindingDesc">Holzdeckelband mit Schweinslederdecke, Streicheisenlinien und Einzelstempel, um 1500  </p>
+                    <p n="bindingDesc">Einband</p>
+                </physDesc>
+                <history>
+                    <summary>Teil 5 und 6: geschrieben um 1490 (aufgrund des Überlieferungszusammenhangs mit Inkunabeln von 1489 und 1490) Teil 9: im letzten Jahrzehnt des 15. Jh. (aufgrund des paläografischen 
+Befunds)  Teile 5 und 6 wegen des engen inhaltlichen Bezugs zu den in Leipzig gedruckten Inkunabeln wohl geschrieben in Leipzig;Teil 9 evtl. geschrieben in Italien, vgl. die in Italien gedruckten Inkunabeln (Teil 7 und 8) 
+                        
+                        
+                        <rs type="org">Leipzig, Dominikanerkloster St. Paul</rs> (Quelle: Inkunabelkatalog) Im Zuge der Säkularisierung in den 1540er Jahren in die Leipziger Bibliotheca Paulina gelangt: auf dem Vorderdeckel Titelschild der Bibliotheca Paulina (1540er Jahre). </summary>
+                    <origin>
+                     
+                        
+                        
+                        <origDate type="Datierung">um 1490</origDate>
+                     
+                        
+                        
+                        <origDate type="Datierung" from="1491" to="1500">1491/1500</origDate>
+                     
+                        
+                        
+                        <origPlace ref="http://d-nb.info/gnd/4035206-7 http://www.geonames.org/6548737 http://vocab.getty.edu/page/tgn/7012329 http://d-nb.info/gnd/4027833-5 http://www.geonames.org/3175395 http://vocab.getty.edu/page/tgn/1000080">Leipzig &amp; Italien</origPlace>
+                  </origin>
+                </history>
+                <additional>
+                    <adminInfo>
+                        <recordHist>
+                            <source>
+                           
+                                
+                                
+                                <bibl type="label">
+                              
+                                    
+                                    
+                                    <author>Almuth Märker</author>
+                              
+                                    
+                                    
+                                    <date when="2014" type="published">2014</date>
+                           </bibl>
+                        </source>
+                        </recordHist>
+                    </adminInfo>
+                    <listBibl>
+                        <bibl>Kaeppeli T.-Panella E., Scriptores Ordinis Praedicatorum Medii Aevi, Bd. 1, Nr. 1253. Inkunabelkatalog der UB Leipzig (erscheint voraussichtlich 2014). </bibl>
+                    </listBibl>
+                </additional>
+            </msDesc>
+        </body>
+    </text>
+</TEI>
