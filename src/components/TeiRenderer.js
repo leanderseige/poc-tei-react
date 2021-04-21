@@ -142,9 +142,13 @@ class TeiRenderer extends React.Component {
 
     return (
       <div>
+        <Button onClick={this.getSelection} variant="contained" color="primary">Selection</Button>
+        <br />
+        <br />
         <TextField fullWidth id="texti" label="Input XPath" value={this.state.texti} onChange={this.editText}/>
-        <TextField fullWidth id="texto" label="Output" value={this.state.texto} />
-        <Button onClick={this.getSelection}>Selection</Button>
+        <br />
+        <br />
+        <TextField fullWidth id="texto" label="XPath Query Result" value={this.state.texto} />
         {this.state.everything}
       </div>
     )
