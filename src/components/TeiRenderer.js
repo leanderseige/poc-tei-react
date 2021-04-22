@@ -77,6 +77,7 @@ class TeiRenderer extends React.Component {
       .then((data) => {
         let parser = new DOMParser()
         let doc = parser.parseFromString(data,"text/xml")
+        doc.addEventListener("mouseup", this.getSelection)
         // console.log({doc:doc})
         doc.createNSResolver(doc)
         // let title = doc.evaluate("//*[name()='title']", doc, null, XPathResult.STRING_TYPE, null).stringValue
