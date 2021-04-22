@@ -5,6 +5,7 @@ import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
 import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Button from '@material-ui/core/Button';
+import Paper from '@material-ui/core/Paper';
 import { v4 } from 'uuid';
 
 class TeiRenderer extends React.Component {
@@ -116,7 +117,7 @@ class TeiRenderer extends React.Component {
 
   getSelection(e) {
     let so = document.getSelection()
-    console.log(so)
+    // console.log(so)
     if(so.anchorOffset===so.focusOffset) {
       return
     }
@@ -142,13 +143,22 @@ class TeiRenderer extends React.Component {
 
     return (
       <div>
-        <Button onClick={this.getSelection} variant="contained" color="primary">Selection</Button>
-        <br />
-        <br />
-        <TextField fullWidth id="texti" label="Input XPath" value={this.state.texti} onChange={this.editText}/>
-        <br />
-        <br />
-        <TextField fullWidth id="texto" label="XPath Query Result" value={this.state.texto} />
+        <Accordion>
+        <AccordionSummary>
+        XPath
+        </AccordionSummary>
+        <AccordionDetails>
+          <Paper elevation={0} style={{width:'100%'}}>
+            <Button onClick={this.getSelection} variant="contained" color="primary">SEL</Button>
+            <br />
+            <br />
+            <TextField fullWidth id="texti" label="Input XPath" value={this.state.texti} onChange={this.editText}/>
+            <br />
+            <br />
+            <TextField fullWidth id="texto" label="XPath Query Result" value={this.state.texto} />
+          </Paper>
+        </AccordionDetails>
+        </Accordion>
         {this.state.everything}
       </div>
     )
