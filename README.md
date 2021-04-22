@@ -1,10 +1,8 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bb355cfe-a410-4618-b85e-3db7e649934f/deploy-status)](https://app.netlify.com/sites/poc-tei-react/deploys)
 
-# Experimental PoC to render XML/TEI in a React Frontend
+# Experimental PoC to render TEI XML in a React Frontend
 
 Demo: https://poc-tei-react.netlify.app/
-
-# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
