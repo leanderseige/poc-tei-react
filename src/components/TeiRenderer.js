@@ -118,18 +118,37 @@ class TeiRenderer extends React.Component {
 
   getSelection(e) {
     let so = document.getSelection()
-    // console.log(so)
-    if(so.anchorOffset===so.focusOffset) {
-      return
-    }
-    let start = (so.anchorOffset<so.focusOffset?so.anchorOffset:so.focusOffset)+1
-    let range = Math.abs(so.anchorOffset-so.focusOffset)
-    let xpath =
-      "substring("+
-        so.focusNode.parentElement.title+
-        ","+start+
-        ","+range+
+    console.log(so)
+
+    let xpath = ''
+
+    if(so.anchorNode === so.focusNode) {
+
+      let start = (so.anchorOffset<so.focusOffset?so.anchorOffset:so.focusOffset)+1
+      let range = Math.abs(so.anchorOffset-so.focusOffset)
+      xpath =
+        "substring("+
+          so.focusNode.parentElement.title+
+          ","+start+
+          ","+range+
+        ")"
+
+    } else {
+
+      xpath = "concat("+
+        "substring("+
+          so.anchorNode.parentElement.title+
+          ","+so.anchorOffset+
+        ")"+
+        '," ",'+
+        "substring("+
+          so.focusNode.parentElement.title+
+          ",0"+
+          ","+so.focusOffset+
+        ")"+
       ")"
+    }
+
     console.log(xpath)
     this.setState({
       texti: xpath
