@@ -51,7 +51,7 @@ class TeiRenderer extends React.Component {
   getEverything(node,path) {
     // console.log({node:node})
     if(node.childElementCount<1) {
-      let tp = path+'/tei:'+node.localName+'[text()="'+node.textContent+'"]'
+      let tp = path+'/tei:'+node.localName
       switch(node.localName) {
         case 'title':
           return(<Tooltip key={v4()} title={tp}><h2 style={{color:'purple'}} onClick={() => this.copy(tp)}>{node.textContent}</h2></Tooltip>)
