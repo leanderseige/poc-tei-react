@@ -144,13 +144,13 @@ class TeiRenderer extends React.Component {
       xpath = "concat("+
         "substring("+
           so.anchorNode.parentElement.title+
-          ","+so.anchorOffset+
+          ","+(so.anchorOffset+1)+
         ")"+
         '," ",'+
         "substring("+
           so.focusNode.parentElement.title+
           ",0"+
-          ","+so.focusOffset+
+          ","+(so.focusOffset+1)+
         ")"+
       ")"
     }
