@@ -16,6 +16,7 @@ class TeiRenderer extends React.Component {
       this.editText = this.editText.bind(this)
       this.copy = this.copy.bind(this)
       this.getSelection = this.getSelection.bind(this)
+      this.pathCounter = []
       this.state = {
         tei: null,
         title: null,
@@ -51,6 +52,8 @@ class TeiRenderer extends React.Component {
     // console.log({node:node})
     if(node.childElementCount<1) {
       let tp = path+'/tei:'+node.localName
+      this.pathCounter[tp] = this.pathCounter[tp] ? this.pathCounter[tp] + 1 : 1
+      tp = tp+'['+this.pathCounter[tp]+']'
       switch(node.localName) {
         case 'title':
           return(<Tooltip key={v4()} title={tp}><h2 style={{color:'purple'}} onClick={() => this.copy(tp)}>{node.textContent}</h2></Tooltip>)
@@ -64,8 +67,11 @@ class TeiRenderer extends React.Component {
 
     } else {
       let retval = []
+      let tp = node.localName?path+'/tei:'+node.localName:path
+      this.pathCounter[tp] = this.pathCounter[tp] ? this.pathCounter[tp] + 1 : 1
+      tp = tp ? tp+'['+this.pathCounter[tp]+']' : tp
       for(let key in node.children) {
-        retval.push(this.getEverything(node.children[key],node.localName?path+'/tei:'+node.localName:path))
+        retval.push(this.getEverything(node.children[key],tp))
       }
       return retval
     }
